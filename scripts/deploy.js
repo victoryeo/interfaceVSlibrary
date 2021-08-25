@@ -7,7 +7,6 @@ async function main() {
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
   const ConSto = await ethers.getContractFactory("StorageContract");
-  //console.log(Lib)
   console.log('Deploying ...');
   const conSto = await ConSto.deploy();
   console.log("StorageContract address:", conSto.address);
