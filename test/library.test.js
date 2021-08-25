@@ -8,7 +8,6 @@ describe("Test Library contract", function () {
     const [owner] = await ethers.getSigners();
 
     const ConSto = await ethers.getContractFactory("StorageContract");
-    //console.log(Lib)
     console.log('Deploying ...');
     const conSto = await ConSto.deploy();
     console.log("StorageContract address:", conSto.address);
