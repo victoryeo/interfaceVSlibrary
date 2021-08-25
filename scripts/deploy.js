@@ -16,7 +16,7 @@ async function main() {
   //console.log(Lib)
   console.log('Deploying ...');
   const lib = await Lib.deploy();
-  console.log("lib address:", lib.address);
+  console.log("Library address:", lib.address);
 
   const ConAction = await ethers.getContractFactory("ActionWithLib", {libraries:{StorageLib: lib.address}});
   //console.log(ConAction)
